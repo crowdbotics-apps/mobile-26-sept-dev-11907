@@ -8,8 +8,8 @@ from django.db import models
 
 class CustomText(models.Model):
     gffhgfhgfhfgfhf = models.CharField(
-        max_length=150,
         blank=True,
+        max_length=150,
     )
 
     def __str__(self):

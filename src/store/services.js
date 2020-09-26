@@ -1,4 +1,14 @@
 import axios from "axios"
+const newConnectoraabbcde = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/11907/storyboard/11240/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
+const plugin11 = axios.create({
+  baseURL:
+    "https://crowdbotics-slack-dev.herokuapp.com/dashboard/app/7307/storyboard/8491/",
+  headers: { Accept: "application/json", "Content-Type": "application/json" }
+})
 const mobile26septAPI = axios.create({
   baseURL: "https://mobile-26-sept-dev-11907.botics.co/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
@@ -14,6 +24,24 @@ function api_v1_customtext_update(requestBody) {
 }
 function api_v1_customtext_partial_update(requestBody) {
   return mobile26septAPI.patch(`/api/v1/customtext/{id}/`, requestBody)
+}
+function api_v1_gghthghjgj_list() {
+  return mobile26septAPI.get(`/api/v1/gghthghjgj/`)
+}
+function api_v1_gghthghjgj_create(requestBody) {
+  return mobile26septAPI.post(`/api/v1/gghthghjgj/`, requestBody)
+}
+function api_v1_gghthghjgj_read() {
+  return mobile26septAPI.get(`/api/v1/gghthghjgj/{id}/`)
+}
+function api_v1_gghthghjgj_update(requestBody) {
+  return mobile26septAPI.put(`/api/v1/gghthghjgj/{id}/`, requestBody)
+}
+function api_v1_gghthghjgj_partial_update(requestBody) {
+  return mobile26septAPI.patch(`/api/v1/gghthghjgj/{id}/`, requestBody)
+}
+function api_v1_gghthghjgj_delete() {
+  return mobile26septAPI.delete(`/api/v1/gghthghjgj/{id}/`)
 }
 function api_v1_homepage_list() {
   return mobile26septAPI.get(`/api/v1/homepage/`)
@@ -74,6 +102,12 @@ export const apiService = {
   api_v1_customtext_read,
   api_v1_customtext_update,
   api_v1_customtext_partial_update,
+  api_v1_gghthghjgj_list,
+  api_v1_gghthghjgj_create,
+  api_v1_gghthghjgj_read,
+  api_v1_gghthghjgj_update,
+  api_v1_gghthghjgj_partial_update,
+  api_v1_gghthghjgj_delete,
   api_v1_homepage_list,
   api_v1_homepage_read,
   api_v1_homepage_update,

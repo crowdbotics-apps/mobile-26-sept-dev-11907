@@ -10,7 +10,7 @@ const plugin11 = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 const mobile26septAPI = axios.create({
-  baseURL: "https://mobile-26-sept-dev-11907.botics.co/",
+  baseURL: "https://mobile-26-sept-dev-11907-prod.herokuapp.com/",
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function api_v1_customtext_list() {
